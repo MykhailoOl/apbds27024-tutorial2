@@ -5,6 +5,20 @@ Console.WriteLine("Modification 1");
 Console.WriteLine("Modification 2");
 Console.WriteLine("Modification 3");
 
+static double GetMax(int[] num)
+{
+    double max = num[0];
+    foreach (var n in num)
+    {
+        if (max < n)
+        {
+            max = n;
+        }
+    }
+
+    return max;
+}
+
 static double GetAverage(int[] numbers)
 {
     double sum = 0;
@@ -15,4 +29,3 @@ static double GetAverage(int[] numbers)
 
     return sum / numbers.Length;
 }
-
