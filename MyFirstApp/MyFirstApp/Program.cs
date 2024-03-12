@@ -1,16 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-static double GetAverage(int[] numbers)
+static double GetMax(int[] numbers)
 {
-    double sum = 0;
+    double max = numbers[0];
     foreach (var number in numbers)
     {
-        sum += number;
+        if (max < number)
+        {
+            max = number;
+        }
     }
 
-    return sum / numbers.Length;
+    return max;
 }
-
-int[] numbers = {1,2,3,4};
-double average = GetAverage(numbers);
-Console.WriteLine(average);
