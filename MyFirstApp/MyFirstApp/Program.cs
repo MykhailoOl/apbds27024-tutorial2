@@ -7,16 +7,16 @@ Console.WriteLine("Modification 3");
 
 static double GetMax(int[] num)
 {
-    double max = num[0];
+    double maximum = num[0];
     foreach (var n in num)
     {
-        if (max < n)
+        if (maximum < n)
         {
-            max = n;
+            maximum = n;
         }
     }
 
-    return max;
+    return maximum;
 }
 
 static double GetAverage(int[] numbers)
