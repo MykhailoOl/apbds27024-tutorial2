@@ -1,13 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-static double GetMax(int[] numbers)
+static double GetMax(int[] num)
 {
-    double max = numbers[0];
-    foreach (var number in numbers)
+    double max = num[0];
+    foreach (var n in num)
     {
-        if (max < number)
+        if (max < n)
         {
-            max = number;
+            max = n;
         }
     }
 
