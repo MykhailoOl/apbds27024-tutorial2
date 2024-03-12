@@ -29,3 +29,4 @@ static double GetAverage(int[] arr)
 
     return res / arr.Length;
 }
+
