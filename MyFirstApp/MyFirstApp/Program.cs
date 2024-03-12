@@ -19,13 +19,13 @@ static double GetMax(int[] num)
     return max;
 }
 
-static double GetAverage(int[] numbers)
+static double GetAverage(int[] arr)
 {
-    double sum = 0;
-    foreach (var number in numbers)
+    double res = 0;
+    foreach (var nu in arr)
     {
-        sum += number;
+        res += nu;
     }
 
-    return sum / numbers.Length;
+    return res / arr.Length;
 }
